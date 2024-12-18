@@ -20,6 +20,7 @@ def insert_crime_record(terror_related, crime, conflict, robbery, fraud, social_
     try:
         connection = mysql.connector.connect(
             host='localhost',
+            port=3306,
             database='crimes',
             user='root',
             password='Oure1234!%'
@@ -47,6 +48,7 @@ def generate_report(period):
     try:
         connection = mysql.connector.connect(
             host='localhost',
+            port=3306,
             database='crimes',
             user='root',
             password='Oure1234!%'
@@ -93,6 +95,7 @@ def display_crime_records():
     try:
         connection = mysql.connector.connect(
             host='localhost',
+            port=3306,
             database='crimes',
             user='root',
             password='Oure1234!%'
